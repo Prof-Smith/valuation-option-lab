@@ -1,7 +1,3 @@
-# World-class visualization correction
+Replace only `docs/index.html`.
 
-Replace exactly one repository file:
-
-`docs/index.html`
-
-Do not alter the notebook, CSV inputs, generated JSON, requirements, or GitHub Actions workflow.
+No changes are required to the notebook, CSV input files, generated JSON, requirements, or GitHub Actions workflow.
