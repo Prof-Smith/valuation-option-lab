@@ -52,7 +52,7 @@
   "states": [
     {
       "state": "Bear",
-      "terminal_price": 82.0,
+      "terminal_price": 89.2,
       "subjective_weight": 0.2,
       "option_payoff": 0.0,
       "weighted_payoff": 0.0
@@ -66,22 +66,20 @@
     },
     {
       "state": "Bull",
-      "terminal_price": 116.0,
+      "terminal_price": 110.80000000000001,
       "subjective_weight": 0.25,
-      "option_payoff": 11.0,
-      "weighted_payoff": 2.75
+      "option_payoff": 5.800000000000011,
+      "weighted_payoff": 1.4500000000000028
     },
     {
       "state": "Tail",
-      "terminal_price": 135.0,
+      "terminal_price": 120.39999999999999,
       "subjective_weight": 0.1,
-      "option_payoff": 30.0,
-      "weighted_payoff": 3.0
+      "option_payoff": 15.399999999999991,
+      "weighted_payoff": 1.5399999999999991
     }
   ],
-  "state_mean": 104.35000000000001,
-  "mean_preservation_gap": 2.083333333333343,
-  "valuation_weighted_expected_payoff": 5.496985520540324,
+  "valuation_weighted_expected_payoff": 2.8584324706809703,
   "lattice": {
     "price": 8.332308324678896,
     "u": 1.0199962898353323,
@@ -95,7 +93,7 @@
     "put_call_parity_pass": true,
     "convergence_pass": true,
     "parity_residual": -4.796163466380676e-14,
-    "convergence_gap_200_500": -0.0015202185624829667
+    "convergence_gap": -0.0015202185624829667
   },
   "convergence": [
     {
@@ -120,7 +118,7 @@
     }
   ],
   "comparison": {
-    "Valuation-weighted expected payoff": 5.496985520540324,
+    "Valuation-weighted expected payoff": 2.8584324706809703,
     "Risk-neutral lattice value": 8.332308324678896,
     "Observed market midpoint": 8.35
   }
