@@ -1,16 +1,10 @@
-# Targeted update only
+# Targeted update
 
-Replace only these repository files/folders:
+Replace only:
 
 - `valuation_option_lab.ipynb`
-- `data/company_inputs.csv`
-- `data/analyst_targets.csv`
 - `docs/index.html`
 
-Do **not** replace or edit `.github/workflows/deploy-pages.yml`.
+Keep the existing CSV inputs, requirements, and `.github/workflows/deploy-pages.yml` unchanged.
 
-## Student use
-1. Edit one row in `data/company_inputs.csv`.
-2. Replace the rows in `data/analyst_targets.csv`.
-3. Commit the CSV changes.
-4. The existing workflow runs the notebook, regenerates `docs/model_results.json`, and deploys the Plotly dashboard.
+The notebook now constructs five analyst-informed states, exports a transparent payoff decomposition, and clearly separates the analyst-scenario discounted expected payoff from the CRR no-arbitrage value.

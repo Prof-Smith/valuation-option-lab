@@ -52,35 +52,58 @@
   },
   "states": [
     {
+      "state": "Severe bear",
+      "quantile": 0.05,
+      "terminal_price": 86.2,
+      "subjective_weight": 0.1,
+      "option_payoff": 0.0,
+      "weighted_payoff": 0.0
+    },
+    {
       "state": "Bear",
-      "terminal_price": 89.2,
+      "quantile": 0.25,
+      "terminal_price": 95.0,
       "subjective_weight": 0.2,
       "option_payoff": 0.0,
       "weighted_payoff": 0.0
     },
     {
       "state": "Base",
+      "quantile": 0.5,
       "terminal_price": 101.0,
-      "subjective_weight": 0.45,
+      "subjective_weight": 0.4,
       "option_payoff": 0.0,
       "weighted_payoff": 0.0
     },
     {
       "state": "Bull",
-      "terminal_price": 110.80000000000001,
-      "subjective_weight": 0.25,
-      "option_payoff": 5.800000000000011,
-      "weighted_payoff": 1.4500000000000028
+      "quantile": 0.75,
+      "terminal_price": 109.0,
+      "subjective_weight": 0.2,
+      "option_payoff": 4.0,
+      "weighted_payoff": 0.8
     },
     {
       "state": "Tail",
+      "quantile": 0.95,
       "terminal_price": 120.39999999999999,
       "subjective_weight": 0.1,
       "option_payoff": 15.399999999999991,
       "weighted_payoff": 1.5399999999999991
     }
   ],
-  "valuation_weighted_expected_payoff": 2.8584324706809703,
+  "valuation_weighted_expected_payoff": 2.237034107489453,
+  "belief_decomposition": {
+    "weight_zero_payoff": 0.7,
+    "weight_positive_payoff": 0.30000000000000004,
+    "weighted_terminal_payoff": 2.339999999999999,
+    "discount_factor": 0.9559974818330998
+  },
+  "distribution_comparison": {
+    "analyst_log_dispersion": 0.11428825106416798,
+    "crr_horizon_volatility": 0.28,
+    "message": "Analyst targets are narrower than the volatility input used by CRR."
+  },
   "lattice": {
     "price": 8.332308324678896,
     "u": 1.0199962898353323,
@@ -94,9 +117,7 @@
     "put_call_parity_pass": true,
     "convergence_pass": true,
     "parity_residual": -4.796163466380676e-14,
-    "convergence_gap": -0.0015202185624829667,
-    "maturity_alignment_status": "PASS",
-    "maturity_gap_years": 0.0
+    "convergence_gap": -0.0015202185624829667
   },
   "convergence": [
     {
@@ -121,8 +142,8 @@
     }
   ],
   "comparison": {
-    "Valuation-weighted expected payoff": 2.8584324706809703,
-    "Risk-neutral lattice value": 8.332308324678896,
+    "Analyst-scenario discounted expected payoff": 2.237034107489453,
+    "CRR risk-neutral lattice value": 8.332308324678896,
     "Observed market midpoint": 8.35
   }
 }
