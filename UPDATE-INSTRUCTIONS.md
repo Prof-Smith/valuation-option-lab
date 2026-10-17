@@ -1,31 +1,30 @@
-# Equity Valuation Visual Fix
+# Equity Valuation Fix v2
 
-This is a targeted update for the final chart issue.
+The earlier script could run before the asynchronously generated dashboard created the valuation chart. This version uses a `MutationObserver` and replaces the chart only after `#valuation` exists.
 
-## 1. Add this new file
+## Replace this file
 
-Upload:
+Upload and overwrite:
 
 `docs/equity-valuation-fix.js`
 
-## 2. Add one line to `docs/index.html`
+## Verify the script tag in `docs/index.html`
 
-Immediately before the closing `</body>` tag, add:
+Immediately before `</body>`, the tag must be exactly:
 
 ```html
 <script src="equity-valuation-fix.js"></script>
 ```
 
-## Keep everything else unchanged
+Delete any malformed earlier line and keep only the exact tag above.
 
-Do not replace or edit:
+## Force the browser to load the new file
 
-- `valuation_option_lab.ipynb`
-- `docs/model_results.json`
-- CSV input files
-- `requirements.txt`
-- `.github/workflows/deploy-pages.yml`
+After GitHub Pages finishes deploying, perform a hard refresh:
 
-## Result
+- Windows: `Ctrl + F5`
+- macOS: `Command + Shift + R`
 
-Only the Equity Valuation panel is redrawn. The compressed zero-based horizontal bars are replaced by a focused lollipop comparison showing the $96 to $106 valuation range, exact values, and a dotted current-market reference line.
+## Expected result
+
+The valuation panel changes from four zero-based bars to four lollipop markers on a focused valuation scale, plus a dotted `$96.00` market-reference line.
