@@ -9,6 +9,7 @@
     "risk_free_rate": 0.045,
     "dividend_yield": 0.012,
     "volatility": 0.28,
+    "volatility_type": "implied",
     "option_type": "call",
     "exercise_style": "european",
     "lattice_steps": 200,
@@ -93,7 +94,9 @@
     "put_call_parity_pass": true,
     "convergence_pass": true,
     "parity_residual": -4.796163466380676e-14,
-    "convergence_gap": -0.0015202185624829667
+    "convergence_gap": -0.0015202185624829667,
+    "maturity_alignment_status": "PASS",
+    "maturity_gap_years": 0.0
   },
   "convergence": [
     {
