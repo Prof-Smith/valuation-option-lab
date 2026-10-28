@@ -1,8 +1,8 @@
 # Instructor Acceptance Checklist
-- Validate CSV inputs.
-- Execute the notebook and confirm JSON regeneration.
-- Confirm input controls recalculate locally.
-- Confirm subjective and risk-neutral labels remain distinct.
-- Confirm audit tests pass.
-- Confirm desktop, mobile, print, and Plotly hover behavior.
-- Confirm GitHub Actions deploys Pages.
+
+- Edit each input CSV and confirm notebook-generated dashboard changes.
+- Confirm Actions passes and Pages publishes.
+- Test Plotly hover and navigation at desktop and mobile widths.
+- Confirm maturity warning appears when horizon gap exceeds 0.25 year.
+- Confirm bid greater than ask, percentage-format errors, mixed horizons, negative targets, and unsupported option types fail clearly.
+- Confirm theoretical bounds, put-call parity, risk-neutral probability, and convergence diagnostics pass.

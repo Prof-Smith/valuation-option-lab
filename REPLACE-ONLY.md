@@ -1,2 +1,7 @@
-# Student replacement files
-Replace values only in `data/company_inputs.csv`, `data/analyst_targets.csv`, and `data/source_documentation.csv`. Preserve field names and model infrastructure.
+# Files intended for routine student replacement
+
+Students should update only:
+- `data/company_inputs.csv`
+- `data/analyst_targets.csv`
+- `data/source_documentation.csv`
+- Decision memo content in their submitted notebook copy

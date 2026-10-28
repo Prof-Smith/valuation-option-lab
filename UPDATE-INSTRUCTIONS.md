@@ -1,2 +1,3 @@
-# Instructor update instructions
-Change analytical logic in `valuation_option_lab.ipynb`, presentation in `docs/index.html` and `docs/assets`, and deployment logic in `.github/workflows/deploy-pages.yml`. Run `python scripts/validate_inputs.py`, execute the notebook, and run `pytest` before publishing.
+# Update Instructions
+
+Copy all files and folders into the GitHub repository root. Preserve the directory structure. Replace the demonstration CSV data, commit, and push. GitHub Actions will execute the notebook, regenerate `docs/model_results.json`, and deploy `docs` to GitHub Pages.

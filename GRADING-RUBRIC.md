@@ -1,9 +1,9 @@
-# Grading Rubric, 100 Points
-- Input quality and source documentation: 15
+# Suggested 100-point rubric
+
+- Evidence and source documentation: 15
 - Equity valuation analysis: 15
-- Analyst distribution and state construction: 15
-- Option-pricing implementation: 20
-- Sensitivity and numerical reversal analysis: 15
-- Theoretical validation: 10
-- Decision memo and model-risk discussion: 5
-- GitHub portfolio presentation: 5
+- Analyst distribution and scenario construction: 15
+- Option pricing and model distinction: 20
+- Validation and model risk: 15
+- Decision memo and reversal condition: 15
+- Reproducibility and professionalism: 5
