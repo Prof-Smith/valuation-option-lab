@@ -1,12 +1,6 @@
-# Valuation-to-Option Pricing Lab v2
+# Valuation-to-Option Pricing Lab, enhanced
 
-This is an integrated analytical build:
-
-- `valuation_option_lab.ipynb` performs the analysis and validation.
-- The notebook writes `docs/model_results.json`.
-- `docs/index.html` reads the generated JSON and renders the dashboard.
-- GitHub Actions executes the notebook before every deployment.
-- Deployment fails if the notebook fails or does not produce dashboard data.
+The notebook is the analytical source, `docs/model_results.json` is the transport layer, and `docs/index.html` is the interactive GitHub Pages interface. Analyst-informed subjective weights remain separate from CRR risk-neutral pricing.
 
 ## Publish
-Upload all contents to the repository root, including `.github/workflows/deploy-pages.yml`. In repository Settings > Pages, select GitHub Actions.
+Upload the contents to the repository root. In GitHub **Settings > Pages**, select **GitHub Actions**. Every push to `main` validates inputs, executes the notebook, generates dashboard data, and deploys `docs`.

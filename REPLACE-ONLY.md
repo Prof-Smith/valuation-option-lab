@@ -1,3 +1,2 @@
-Replace only `docs/index.html`.
-
-No changes are required to the notebook, CSV input files, generated JSON, requirements, or GitHub Actions workflow.
+# Student replacement files
+Replace values only in `data/company_inputs.csv`, `data/analyst_targets.csv`, and `data/source_documentation.csv`. Preserve field names and model infrastructure.

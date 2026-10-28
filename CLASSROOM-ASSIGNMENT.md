@@ -1,35 +1,7 @@
 # Valuation-to-Option Pricing Lab
 
-## Deliverable
+## Decision
+Determine whether the observed option price is more consistent with the analyst-informed payoff or CRR no-arbitrage value. Explain the gap, identify the most consequential uncertainty, and state a numerical reversal condition.
 
-Each team publishes a reproducible financial analytics artifact connecting equity valuation beliefs with state-contingent option payoffs and CRR no-arbitrage pricing.
-
-## Required submission
-
-1. GitHub repository URL
-2. Published GitHub Pages URL
-3. Executed `valuation_option_lab.ipynb`
-4. Three completed CSV input files
-5. Dashboard generated from notebook output
-6. Decision memo completed in the notebook
-
-## Required memo sections
-
-### Equity valuation
-Explain the current price, DCF, comparable value, and analyst median.
-
-### Analyst distribution
-Discuss central tendency, dispersion, outliers, dependence, and limitations.
-
-### Option pricing
-Report the belief-weighted payoff, CRR value, bid, midpoint, and ask.
-
-### Model risk
-Discuss maturity alignment, volatility choice, dividends, liquidity, spreads, state weights, and model specification.
-
-### Conclusion
-State what the evidence supports without automatically calling the option mispriced.
-
-## Protected infrastructure
-
-Do not change `.github/workflows/deploy-pages.yml`, `requirements.txt`, the CRR function, validation tests, or `docs/index.html`.
+## Workflow
+1. Document equity values. 2. Inspect analyst dispersion. 3. Construct five states. 4. Map states into payoffs. 5. Calculate the subjective discounted payoff. 6. Calculate CRR value. 7. Compare with the market. 8. Audit the model. 9. Write the conclusion.
